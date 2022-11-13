@@ -1,0 +1,14 @@
+# program to calculate linear ranking
+def calc(s,miu):
+    #miu = population size
+    # i = fitness rank
+    lst = []
+    for i in range(0,miu):
+        p = (2-s)/miu + (2*i*(s-1)) / (miu*(miu-1))
+        lst.append(p)
+    return lst
+
+def main():
+    print(calc(0.1,5))
+    lst = []
+main()
